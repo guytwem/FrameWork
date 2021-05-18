@@ -1,0 +1,71 @@
+using UnityEngine;
+using UnityEditor;
+using DialogueSystem.Character;
+
+namespace DialogueSystem.EditorMode
+{
+    
+    public class Dialogue : EditorWindow
+    {
+
+        public CharacterDialogue cd;
+
+        [MenuItem("Window/Dialogue")]
+        public static void ShowWindow()
+        {
+            GetWindow<Dialogue>("Dialogue");
+        }
+        
+        private void OnGUI()
+        {
+            
+           if(Selection.gameObjects == null)
+            {
+                GUILayout.Label("Select a GameObject to Add or Change Dialogue");
+            }
+
+
+            if (Selection.gameObjects != null && 
+                Selection.activeTransform.gameObject.GetComponent<CharacterDialogue>() == null)
+
+            {
+                
+                GUILayout.Label("Create a Dialogue");
+                if (GUILayout.Button("Create"))
+                {
+                    ApplyScript();
+                }
+            }
+            else if(Selection.gameObjects != null &&
+                Selection.activeTransform.gameObject.GetComponent<CharacterDialogue>() != null)
+            {
+                GUILayout.Label("edit dialogue things");
+                //cd.name = GUILayout.TextField("Name", cd.name);
+            }
+            
+            
+            
+        }
+
+        void ApplyScript()
+        {
+            foreach(GameObject obj in Selection.gameObjects)
+            {
+                if( obj.GetComponent<CharacterDialogue>() == null)
+                {
+                    obj.AddComponent<CharacterDialogue>();
+                    Debug.Log("Character Dialogue Added");
+                }
+                else
+                {
+                    Debug.Log("Dialogue Already Created on that Object");
+                }
+                
+            }
+        }
+
+
+    }
+}
+
+
