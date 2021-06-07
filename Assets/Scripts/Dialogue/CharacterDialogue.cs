@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DialogueSystem.EditorMode;
+
 
 namespace DialogueSystem.Character
 {
@@ -13,16 +13,17 @@ namespace DialogueSystem.Character
         public int currentLineIndex;
         public Vector2 scr;
 
-        public string name;
+        public string dialogueName;
         public string[] dialogueText;
 
-        
+       
 
         private void OnGUI()
         {
             if (showDialogue)
             {
-               
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 scr.x = Screen.width / 16;
                 scr.y = Screen.height / 9;
 
@@ -42,9 +43,9 @@ namespace DialogueSystem.Character
                         showDialogue = false;
                         currentLineIndex = 0;
 
-                        
-                        //Cursor.lockState = CursorLockMode.Locked;
-                        //Cursor.visible = false;
+                        Cursor.lockState = CursorLockMode.Locked;
+                        Cursor.visible = false;
+
                     }
                 }
             }
