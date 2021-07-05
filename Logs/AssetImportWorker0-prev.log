@@ -1,0 +1,107 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19041.1052; Version 2004; 64bit' Language: 'en' Physical Memory: 16343 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Tafe\2020.2.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Tafe/Diploma/FrameWork
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+64592
+Successfully changed project path to: C:/Tafe/Diploma/FrameWork
+C:/Tafe/Diploma/FrameWork
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 22.02 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.2f1 (068178b99f32)
+[Subsystems] Discovering subsystems at path C:/Tafe/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Tafe/Diploma/FrameWork/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   
+    VRAM:     8088 MB
+    Driver:   27.21.14.6109
+Initialize mono
+Mono path[0] = 'C:/Tafe/2020.2.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Tafe/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Tafe/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Tafe/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002033 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 21.10 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.024 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000675 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.761 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1107 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 56.8 MB.
+System memory in use after: 56.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1548.
+Total: 1.543800 ms (FindLiveObjects: 0.128300 ms CreateObjectMapping: 0.041600 ms MarkObjects: 1.300600 ms  DeleteObjects: 0.072700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/Sorting/SelectionSort.cs
+  artifactKey: Guid(886a3f71a7e92df4b98f5eee0f1eacbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Sorting/SelectionSort.cs using Guid(886a3f71a7e92df4b98f5eee0f1eacbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39f190ede73d64e0f55321abec793147') in 0.036721 seconds
+  Import took 0.038351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.235151 seconds.
+  path: Assets/Scripts/Searching/Pathfinding.cs
+  artifactKey: Guid(5903f995d74ffc34d9737bd01c49c2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Searching/Pathfinding.cs using Guid(5903f995d74ffc34d9737bd01c49c2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd44c1024713ce779c1c7cb73a09e37d7') in 0.006052 seconds
+  Import took 0.007782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003641 seconds.
+  path: Assets/Scripts/Searching/Pathfinding.cs
+  artifactKey: Guid(5903f995d74ffc34d9737bd01c49c2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Searching/Pathfinding.cs using Guid(5903f995d74ffc34d9737bd01c49c2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd44c1024713ce779c1c7cb73a09e37d7') in 0.002538 seconds
+  Import took 0.004423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 296.728817 seconds.
+  path: Assets/Scripts/Dialogue/CharacterDialogue.cs
+  artifactKey: Guid(e1cb26b765bfdea45a95bb763eebde5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Dialogue/CharacterDialogue.cs using Guid(e1cb26b765bfdea45a95bb763eebde5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6efad32b4442cbee67b97b746217a591') in 0.006344 seconds
+  Import took 0.008344 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
