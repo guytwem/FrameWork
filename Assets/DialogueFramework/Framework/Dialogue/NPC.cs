@@ -8,6 +8,6 @@ namespace DialogueSystem.DialogueNPC
     {
         [SerializeField] protected private string name; // NPC name
 
-        public abstract void Interact();
+        public abstract void Interact(); //interact function.
     }
 }

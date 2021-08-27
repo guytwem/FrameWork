@@ -10,10 +10,10 @@ namespace DialogueSystem.Movement
     {
 
 
-        public CharacterController controller;
+        public CharacterController controller; //ref to character controller
 
-        public float speed = 12f;
-        public float gravity = -9.81f;
+        public float speed = 12f; //player speed
+        public float gravity = -9.81f; //player gravity
 
         private Vector3 velocity;
 
@@ -26,7 +26,7 @@ namespace DialogueSystem.Movement
         {
             controller = GetComponent<CharacterController>();//get controller component
 
-            camera = Camera.main;
+            camera = Camera.main; //setting main cam
 
             Cursor.lockState = CursorLockMode.Locked; //lock mouse
         }
@@ -39,7 +39,10 @@ namespace DialogueSystem.Movement
 
 
         }
-
+        
+        /// <summary>
+        /// gets mouse positions and uses it to move the camera.
+        /// </summary>
         private void MouseLook()
         {
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
@@ -52,7 +55,10 @@ namespace DialogueSystem.Movement
             transform.Rotate(Vector3.up * mouseX); //move camera based on mouse positions
 
         }
-
+        
+        /// <summary>
+        /// gets horizontal and vertical axis, uses it to move the player gameObject.
+        /// </summary>
         private void Move()
         {
             float x = Input.GetAxis("Horizontal");
@@ -67,6 +73,9 @@ namespace DialogueSystem.Movement
 
             controller.Move((velocity + move) * speed * Time.deltaTime);
         }
+        /// <summary>
+        /// when you press E cast out a ray that will only hit interactable obj. if hits then Interact with that obj.
+        /// </summary>
         public void Interact()
         {
             if (Input.GetKeyDown(KeyCode.E))
