@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace DialogueSystem.DialogueNPC
 {
+    /// <summary>
+    /// Who is the NPC?
+    /// </summary>
     public abstract class NPC : MonoBehaviour
     {
         [SerializeField] protected private string name; // NPC name

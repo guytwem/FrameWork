@@ -5,6 +5,9 @@ using DialogueSystem.DialogueNPC;
 
 namespace DialogueSystem.Movement
 {
+    /// <summary>
+    /// The player movement controls that allows you to move around and interact with npc's.
+    /// </summary>
     [RequireComponent(typeof(CharacterController))]
     public class PlayerMovement : MonoBehaviour
     {

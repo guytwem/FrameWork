@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace DialogueSystem.Searching
 {
+    /// <summary>
+    /// Creates a Grid and figures out Nodes and there values.
+    /// </summary>
     public class Grid : MonoBehaviour
     {
         

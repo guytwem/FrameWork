@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace DialogueSystem.Searching
 {
+    /// <summary>
+    /// Creates Nodes and there values
+    /// </summary>
     public class Node
     {
         public bool walkable;

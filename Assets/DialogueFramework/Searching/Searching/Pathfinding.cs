@@ -5,6 +5,9 @@ using UnityEngine;
 using DialogueSystem.Searching;
 using Grid = DialogueSystem.Searching.Grid;
 
+/// <summary>
+/// Finds the most efficient path
+/// </summary>
 public class Pathfinding : MonoBehaviour
 {
    private Grid grid; //grid script reference

@@ -5,7 +5,9 @@ using UnityEngine;
 
 namespace DialogueSystem.Character
 {
-
+    /// <summary>
+    /// The setup for the dialogue including GUI box, what is the dialogue and what line of dialogue to be on.
+    /// </summary>
     public class CharacterDialogue : MonoBehaviour
     {
 

@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace DialogueSystem.SelectionSort
 {
+    /// <summary>
+    /// Creates cubes and then moves them based on size.
+    /// </summary>
    public class SelectionSort : MonoBehaviour
    {
        public int NumberOfObj = 10; // how many things are being sorted

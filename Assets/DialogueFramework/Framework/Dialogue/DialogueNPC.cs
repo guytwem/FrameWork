@@ -5,6 +5,9 @@ using DialogueSystem.Character;
 
 namespace DialogueSystem.DialogueNPC
 {
+    /// <summary>
+    /// The NPC that will be interacted with
+    /// </summary>
     public class DialogueNPC : NPC
     {
         [SerializeField] private CharacterDialogue dialogue;
